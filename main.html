@@ -27,7 +27,32 @@
 <p class="p1"><b><i>RDF Mapper</i></b></p>
 <p class="p2"><br></p>
 <p class="p3">RDFMapper is a tool for visualising bearings produced by a pseudo-doppler radio direction finder (or other bearing finding hardware). It was originally written to work with the <a href="http://members.chello.nl/~w.hofman/pa8w/dopplerRDF.htm">PA8W doppler RDF.</a></p>
-<br><img src="http://www.musther.net/RDFMapper/RDFexampleimg.jpg" width="100%">
+
+	<!-- not using right now<br><img src="http://www.musther.net/RDFMapper/RDFexampleimg.jpg" width="100%">--!>
+	
+<!-- new code to hopefully create gallery--!>	
+<div class="row">
+  <div class="column">
+    <img src="INSERT IMAGE" alt="screenshot" onclick="openImg(this);">
+  </div>
+  <div class="column">
+    <img src="INSERT IMAGE" alt="real world use" onclick="openImg(this);">
+  </div>
+ </div>
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>	
+	
+<!-- now back to the original code --!>
+
 <p class="p2"><br></p>
 <p class="p3"><b>Introduction</b></p>
 <p class="p3">Radio direction finding is typically used to find the position of a transmitter, using one or more direction-finding receivers. The receiver produces a bearing to the transmitter, which is only useful when it is referenced in the real world. RDFMapper is a solution designed to solve the problem of locating these bearings in the real world.
